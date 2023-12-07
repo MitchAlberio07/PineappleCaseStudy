@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">PineApple</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="img/imgone.png" width="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pine">
+        <h1>Pineapple is an online platform website creating a fun and engaging environment that inspires users while ensuring the content remains the focus. This website should evoke a sense of curiosity and playfulness, making the learning experience of CSS  enjoyable and effective.</h1>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title"> Findings</h3>
+            <div class="content">
+                <div class="info">
+                    <p> 
+                        Easy Access to CSS Resources: The website aims to provide easy access to a wide range of CSS learning resources. This can include tutorials, articles, videos, code examples, and interactive exercises. The goal is to make learning CSS convenient and accessible.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="img/imgtwo.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">This case study aims to:</h3>
+            <div class="content">
+                <div class="image" id="case">
+                    <img src="img/imgthree.png">
+                </div>
+                <div class="info">
+                    <p>Updated Content: Regularly update the content to reflect the latest CSS standards and best practices, especially in the rapidly evolving field of web design.
+                        Engaging Visuals: Use visual aids, examples, and animations to make complex CSS concepts more accessible and engaging for learners.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">User - Experience</h3>
+            <div class="content">
+                <div class="info">
+                    <p>Purpose:
+                        The main purpose of the website is to provide a valuable, accessible, and engaging platform for individuals to learn and master Cascading Style Sheets (CSS). It should serve as a hub for web development enthusiasts, designers, and beginners seeking to improve their CSS skills.</p>
+                </div>
+                <div class="image" id="user">
+                    <img src="img/imgfour.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-04">
+        <div class="container">
+            <h3 class="section-title">User  Flow</h3>
+            <div class="content2">
+                <div class="image" id="flow">
+                    <img src="img/imgfive.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="back-button">
+           <a href="index.html">BACK</a>
+        </div>
+    </section>
+
+    
+    
+
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px', 
+            duration:2500,
+            delay:400
+        });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 500,origin: 'left' });
+        ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600,origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700,origin: 'right' });
+        ScrollReveal().reveal('.sec-02 .image, .sec-03 .image, .sec-04 .image', { delay: 500,origin: 'top' });
+        ScrollReveal().reveal('.', { delay: 500,origin: 'left' });
+    </script>
+</body>
+</html>
